@@ -1,0 +1,6 @@
+requests==2.32.3
+apache-airflow-providers-amazon==9.6.1
+apache-airflow-providers-openlineage==2.2.0
+awswrangler==3.11.0
+boto3==1.38.8
+apache-airflow-providers-oracle==3.4.0
