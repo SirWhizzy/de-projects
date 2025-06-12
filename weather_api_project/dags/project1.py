@@ -49,32 +49,6 @@ def results_df():
 df = results_df()  
 
 
-
-"""
-def aws_session():
-    session = boto3.Session(
-    aws_access_key_id=os.getenv('aws_access_key'),
-    aws_secret_access_key=os.getenv('aws_secret_key'),
-    region_name=os.getenv('region'))
-    return session
-
-time_stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-path = f"s3://toludebuckets/weather_api" + f"/{time_stamp}"
-
-
-def upload_to_aws():
-    wr.s3.to_parquet(
-    df=df, 
-    path=path, 
-    dataset=True, 
-    mode="append",
-    boto3_session=aws_session()
-    )
-    return
-
-    """
-
 def upload_to_aws(**context):
     access_key = Variable.get("aws_access_key")
     secret_key = Variable.get("aws_secret_key")
